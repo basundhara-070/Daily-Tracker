@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5000/api/daylogs";
+const API_BASE = "https://daily-tracker-5c52.onrender.com/api/daylogs";
 
 export const fetchDayLog = async (date) => {
   const res = await fetch(`${API_BASE}/${date}`);
