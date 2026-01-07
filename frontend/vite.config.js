@@ -9,5 +9,8 @@ export default defineConfig({
   ],
   server: {
     host: true
-  }
+  },
+   allowedHosts: [
+      "daily-tracker-app-he1w.onrender.com"
+    ],
 })
