@@ -1,0 +1,15 @@
+const API_BASE = "http://localhost:5000/api/daylogs";
+
+export const fetchDayLog = async (date) => {
+  const res = await fetch(`${API_BASE}/${date}`);
+  return res.json();
+};
+
+export const saveDayLog = async (date, hours, notes = "") => {
+  const res = await fetch(`${API_BASE}/${date}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ hours, notes }),
+  });
+  return res.json();
+};
