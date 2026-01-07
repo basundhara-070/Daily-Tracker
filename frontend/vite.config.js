@@ -8,7 +8,7 @@ export default defineConfig({
     tailwindcss()
   ],
   server: {
-    host: true
+    host: true,
+    allowedHosts: "all"
   },
-   allowedHosts: "all"
 })
