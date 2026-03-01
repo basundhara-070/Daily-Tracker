@@ -14,7 +14,7 @@ export default function DaySummary({ hours }) {
 
   return (
     <div className="bg-white dark:bg-zinc-900 p-4 rounded-xl shadow space-y-3">
-      <h2 className="text-lg font-semibold">📊 Day Summary</h2>
+      <h2 className="text-lg font-semibold">Day Summary</h2>
 
       <div className="space-y-2">
         {Object.entries(summary).map(([key, value]) => (

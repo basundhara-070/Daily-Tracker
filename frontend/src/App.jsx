@@ -1,13 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import CalendarPage from "./pages/CalendarPage";
-import DayView from "./pages/DayView";
-
+import Dashboard from "./components/Dashboard";
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<CalendarPage />} />
-        <Route path="/day/:date" element={<DayView />} />
+        <Route path="/" element={<Dashboard />} />
       </Routes>
     </BrowserRouter>
   );
